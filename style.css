@@ -46,8 +46,6 @@ html {
 }
 
 body {
-  /* margin: 0;
-  padding: 0; */
   width: 100%;
   min-height: 100vh;
 
@@ -66,14 +64,6 @@ body {
   width: 100%;
   max-width: 1440px;
   padding: 20px 40px 40px;
-}
-
-.wrapper,
-.header,
-.main,
-.footer,
-.section {
-  margin: 0;
 }
 
 .container {
@@ -95,8 +85,6 @@ body {
   display: flex;
   align-items: center;
   gap: 40px;
-  margin: 0;
-  padding: 0;
 
   list-style: none;
 }
@@ -155,13 +143,9 @@ a {
   text-decoration: none;
 }
 
-/* a:hover {
+a:hover {
   color: var(--text-accent);
-} */
-
-/* a:visited {
-  color: var(--text-inverse)
-} */
+}
 
 .header-menu {
   display: flex;
