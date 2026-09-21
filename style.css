@@ -1,0 +1,248 @@
+:root {
+  --color-black-800: #403F3D;
+  --color-black-900: #292826;
+  --color-gray-300: #E1D4C9;
+  --color-gray-400: #C1B6AD;
+  --color-brown-500: #B0907A;
+  --color-brown-900: #665F55;
+
+  /* Light theme */
+  --text-primary: var(--color-black-800);
+  --text-inverse: var(--color-gray-300);
+  --text-accent: var(--color-brown-500);
+
+  --bg-page: var(--color-gray-300);
+  --bg-container: var(--color-brown-900);
+  --bg-overlay: color-mix(in srgb, var(--color-black-800)80%, transparent);
+
+  --border-primary: var(--color-gray-400);
+  --border-inverse: var(--color-brown-900);
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  src: url('assets/fonts/Inter-VariableFont.ttf') format('truetype');
+  font-weight: 400 600;
+  font-style: normal;
+  font-display: swap; /*change font*/
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  src: url('assets/fonts/Inter-Italic-VariableFont.ttf') format('truetype');
+  font-weight: 400 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+
+  font-family: 'Inter Variable', sans-serif;
+
+  color: var(--text-primary);
+  background: var(--bg-page)
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  padding: 20px 40px 40px;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+}
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  list-style: none;
+}
+
+/* Typography */
+.heading1 {
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 105%;
+}
+
+.heading1-italic,
+.heading2-italic {
+  font-style: italic;
+}
+
+.heading2 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.heading3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.text-16 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.text-10 {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.link,
+.button {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.burger-link {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.theme-toggle {
+  border: 1px solid var(--border-primary);
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 4px;
+
+  cursor: pointer;
+
+  background-color: var(--bg-page);
+}
+
+.sun,
+.moon {
+  width: 36px;
+  height: 36px;
+}
+
+.menu-burger {
+  width: 72px;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 0;
+
+  border: none;
+
+  cursor: pointer;
+
+  background-color: var(--bg-page);
+}
+
+.main {
+  padding-top: 20px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  background-image: url('assets/img/img-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  aspect-ratio: 1360 / 644;
+  border-radius: 30px;
+  display: flex;
+
+  padding: 0 100px;
+  gap: 100px;
+}
+
+.hero-content,
+.hero-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 40px;
+
+  padding: 100px 0;
+}
+
+.hero-h1-inverse {
+  color: var(--text-inverse);
+}
+.hero-span {
+  color: var(--text-accent);
+}
+
+.hero-text {
+  color: var(--text-inverse);
+}
+
+.menu-button {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+
+  width: 40%;
+
+  border-radius: 30px;
+}
