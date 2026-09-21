@@ -144,7 +144,7 @@ a {
 }
 
 a:hover {
-  color: var(--text-accent);
+  text-decoration: underline;
 }
 
 .header-menu {
